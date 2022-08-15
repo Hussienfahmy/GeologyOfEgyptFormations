@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/preQuestionsFragment">
+
+    <fragment
+        android:id="@+id/preQuestionsFragment"
+        android:name="com.hussienfahmy.geologyofegyptformations.ui.fragments.PreQuestionsFragment"
+        android:label="Questions Properties"
+        tools:layout="@layout/fragment_pre_questions">
+        <action
+            android:id="@+id/action_pre_Questions_Fragment_to_questions_Fragment"
+            app:destination="@id/questionsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.hussienfahmy.geologyofegyptformations.ui.fragments.QuestionsFragment"
+        android:label="Questions"
+        tools:layout="@layout/fragment_questions">
+        <argument
+            android:name="questions"
+            app:argType="com.hussienfahmy.geologyofegyptformations.model.Question[]" />
+        <argument
+            android:name="countdown"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.hussienfahmy.geologyofegyptformations.ui.formations.FormationsFragment"
+        android:label="Data"
+        tools:layout="@layout/fragment_formations">
+        <action
+            android:id="@+id/action_data_Fragment_to_formationDetails"
+            app:destination="@id/formationDetails"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/formationDetails"
+        android:name="com.hussienfahmy.geologyofegyptformations.ui.formations.FormationDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_formation_details">
+        <argument
+            android:name="formationName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_formationDetails_self"
+            app:destination="@id/formationDetails"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top"/>
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.hussienfahmy.geologyofegyptformations.ui.AboutFragment"
+        android:label="About App" />
+    <action
+        android:id="@+id/action_global_aboutFragment"
+        app:destination="@id/aboutFragment"
+        app:enterAnim="@anim/slide_in_bottom"
+        app:exitAnim="@anim/slide_out_top"
+        app:popEnterAnim="@anim/slide_in_top"
+        app:popExitAnim="@anim/slide_out_bottom" />
+
+</navigation>

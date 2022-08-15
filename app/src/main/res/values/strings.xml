@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Geology Of Egypt Formations</string>
+    <string name="questions">Questions</string>
+    <string name="data">Data</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="how_many_questions">How Many Questions ?</string>
+    <string name="author">Author: %s</string>
+    <string name="locations">Locations:\n%s</string>
+    <string name="overlies">Overlies: <b><font fgcolor="#ff0099cc">%s</font></b></string>
+    <string name="thickness">Thickness: %s</string>
+    <string name="fossils">Fossils: <i>%s</i></string>
+    <string name="age">Age: %s</string>
+    <string name="economic_importance">Economic Importance: \n%s</string>
+    <string name="lithology">Lithology: %s</string>
+    <string name="underlies">Underlies: <b><font fgcolor="#ff0099cc">%s</font></b></string>
+    <string name="succession">Succession: %s</string>
+    <string name="search">Search</string>
+    <string name="locality">Locality</string>
+    <string name="author_text">Author</string>
+    <string name="age_text">Age</string>
+    <string name="fossil_text">Fossils</string>
+    <string name="formations_text">Formations</string>
+    <string name="practical_formations_age">Practical Formations Age</string>
+    <string name="type_of_questions">Type Of Questions</string>
+    <string name="diachronic">Diachronic Formations</string>
+    <string name="lithology_text">Lithology</string>
+    <string name="how_many_countdown">Countdown (Seconds)</string>
+    <string name="seconds_remaining">Seconds Remaining:</string>
+    <string name="lectures_range">Lectures Range</string>
+    <string name="lecture">Lecture:</string>
+    <string name="about">About</string>
+
+    <string name="aboutLibraries_description_showIcon">true</string>
+    <string name="aboutLibraries_description_showVersion">true</string>
+    <string name="aboutLibraries_description_text">This App Designed For Geology Department Students Ain Shams University Based On Geology Of Egypt Course\n\nApp Usage: Help Students to remember the characters of different formations in egypt by display it\'s details as questions and answers pattern\n\nCredits: Thanks to Prof. Ahmed Aly Ismail Youssef for his great efforts during the semester\n\nThanks to Mohammed Emad for Data Reviewing\n\nIcons Designed By Freepik</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="main_font">@dimen/_16ssp</dimen>
+    <dimen name="second_font">@dimen/_12ssp</dimen>
+    <dimen name="margin_8sdp">@dimen/_8sdp</dimen>
+</resources>

@@ -1,0 +1,156 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "ef96d1f153e87ac26ed77f1426e2884f",
+    "entities": [
+      {
+        "tableName": "practical_formations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`key` INTEGER NOT NULL, `area` TEXT NOT NULL, `section` TEXT NOT NULL, `formation_name` TEXT NOT NULL, `age` TEXT NOT NULL, PRIMARY KEY(`key`))",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "area",
+            "columnName": "area",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "section",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "formationName",
+            "columnName": "formation_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "age",
+            "columnName": "age",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "key"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "egypt_formations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`key` INTEGER NOT NULL, `area` TEXT NOT NULL, `location` TEXT NOT NULL, `succession` TEXT NOT NULL, `formation_name` TEXT NOT NULL, `author` TEXT NOT NULL, `overlies` TEXT NOT NULL, `underlies` TEXT NOT NULL, `thickness` TEXT NOT NULL, `lithology` TEXT NOT NULL, `fossils` TEXT NOT NULL, `age` TEXT NOT NULL, `economic_importance` TEXT NOT NULL, `lec_num` INTEGER NOT NULL, PRIMARY KEY(`key`))",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "area",
+            "columnName": "area",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "succession",
+            "columnName": "succession",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "formationName",
+            "columnName": "formation_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "author",
+            "columnName": "author",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "overlies",
+            "columnName": "overlies",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "underlies",
+            "columnName": "underlies",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thickness",
+            "columnName": "thickness",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lithology",
+            "columnName": "lithology",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fossils",
+            "columnName": "fossils",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "age",
+            "columnName": "age",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "economicImportance",
+            "columnName": "economic_importance",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lectureNumber",
+            "columnName": "lec_num",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "key"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ef96d1f153e87ac26ed77f1426e2884f')"
+    ]
+  }
+}
